@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  line-height: 1.5em;
+}
+
+#navbar {
+  background-color: #43766c;
+  color: #f8fae5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  border-right: solid;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  height: 88%;
+  overflow-y: auto;
+}
+
+#navbar li {
+  border-top: 1px solid #f8fae5;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f8fae5;
+  display: block;
+  padding: 10px 30px;
+}
+
+.nav-link:hover {
+  background-color: #f8fae5;
+  color: #43766c;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 40px 40px;
+  background-color: #f8fae5;
+  color: #43766c;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+.main-section:last-of-type,
+.main-section p {
+  margin-bottom: 0;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: relative;
+  left: -15px;
+}
+
+code {
+  display: block;
+  background-color: rgb(67, 118, 108, 0.8);
+  color: #f8fae5;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  height: auto;
+  white-space: pre-line;
+}
+
+#Reference a {
+  color: #43766c;
+}
+
+/* Responsive Size */
+@media (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-bottom: solid;
+  }
+
+  #navbar ul {
+    height: 232px;
+  }
+
+  #main-doc {
+    margin: 300px 0 0 0;
+  }
+}
